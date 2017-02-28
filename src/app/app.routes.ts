@@ -9,7 +9,8 @@ const routes: Routes = [
     {
         component: LoginComponent,
         path: ''
-    }
+    },
+    { path: 'admindsh', redirectTo: 'component-one', pathMatch: 'full' },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true });

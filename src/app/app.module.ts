@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 
 //router
 import { routing } from './app.routes';
+import { AdminpagesModule } from './pages/admin/adminpages/adminpages.module';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { routing } from './app.routes';
     FormsModule,
     HttpModule,
     RouterModule,
-    routing
+    routing,
+    AdminpagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
